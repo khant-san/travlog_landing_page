@@ -4,9 +4,10 @@
 
 @layer base {
   body {
-    @apply bg-slate-900 overflow-x-hidden;
+    @apply bg-white overflow-x-hidden;
   }
 }
+
 
 * {
   margin: 0;
@@ -64,6 +65,17 @@
   background: rgba(149, 66, 232, 0.35);
   filter: blur(175px);
   transform: rotate(-114.2deg);
+}
+
+.gradient-06 {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: 0%;
+  top: 5%;
+  background: #FF5722;
+  filter: blur(500px);
+  transform: rotate(-144.2deg);
 }
 
 .gradient-04 {

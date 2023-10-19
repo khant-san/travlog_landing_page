@@ -2,30 +2,48 @@
 import { motion } from 'framer-motion'
 import styles from '../styles'
 import { navVariants } from '../utils/motion'
+import { navLinks } from '@/constants'
+import { useState } from 'react'
+import { CustomButton } from '.'
 
 
+const Navbar = () => {
+  const [active, setActive] = useState();
+  return (
 
-const Navbar = () => (
-  <motion.nav
-    variants={navVariants}
-    initial="hidden"
-    whileInView="show"
-    className={`${styles.xPaddings} py-8 relative`}
-  >
-    <div className='absolute w-[50%] inset-0 gradient-01' />
-    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`} >
-      <img
-        src="/search.svg"
-        alt="search"
-        className='w-[24px] h-[24px] object-contain' />
-      <h2 className='font-extrabold text-[24px] leading-[30px] text-black'>METAVERSE</h2>
-      <img
-        src="/menu.svg"
-        alt="menu"
-        className='w-[24px] h-[24px] object-contain' />
-    </div>
-  </motion.nav>
+    < motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} py-8 relative`}
+    >
+      <div className='absolute w-[50%] inset-0 gradient-06' />
+      <div className={`${styles.innerWidth} mx-auto flex justify-between gap-3`} >
+        <h2 className='font-extrabold text-[24px] leading-[30px] text-black'>Travlog</h2>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
+          {navLinks.map((link) => (
+            <li
+              key={link.id}
+              className={`${active === link.title ? "text-gray-950" : "text-gray-500"
+                }
+                hover:text-gray-950 text-[15px] font-medium cursor-pointer`}
+              onClick={() => {
+                setActive(link.title);
+              }}
+            >
+              <a href={`#${link.id}`}>{link.title}</a>
+            </li>
+          ))}
+        </ul>
+        <div className='flex justify-between gap-2'>
+          <CustomButton name="Login" containerStyle="" handleClick="" btnType="" textStyle="" />
+          <CustomButton name="SignUp" containerStyle="" handleClick="" btnType="" textStyle="" />
 
-);
+        </div>
+      </div>
+    </motion.nav >
+
+  );
+}
 
 export default Navbar
