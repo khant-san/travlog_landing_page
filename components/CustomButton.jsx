@@ -1,10 +1,12 @@
 'use client';
 import React from 'react'
 import { Button } from '@nextui-org/react'
-const CustomButton = ({ name, containerStyle, handleClick, btnType, textStyle }) => {
+import Image from 'next/image';
+const CustomButton = ({ name, containerStyle, handleClick, btnType, textStyle, rightIcon }) => {
+
     return (
         <Button
-            color='primary'
+
             disabled={false}
             type={btnType || "button"}
             className={`rounded-full border-0 ${containerStyle}`}
@@ -12,7 +14,14 @@ const CustomButton = ({ name, containerStyle, handleClick, btnType, textStyle })
             <span className={`flex-1 ${textStyle}`}>
                 {name}
             </span>
-
+            {rightIcon && (
+                <div className='relative w-6 h-6'>
+                    <Image src={rightIcon}
+                        alt="right"
+                        fill
+                        className='object-contain' />
+                </div>
+            )}
         </Button >
     )
 }

@@ -36,8 +36,8 @@ const Navbar = () => {
           ))}
         </ul>
         <div className='flex justify-between gap-2'>
-          <CustomButton name="Login" containerStyle="" handleClick="" btnType="" textStyle="" />
-          <CustomButton name="SignUp" containerStyle="" handleClick="" btnType="" textStyle="" />
+          <CustomButton name="Login" containerStyle="bg-white hover:bg-[#5D50C6]" handleClick="" btnType="" textStyle="hover:text-white" rightIcon="" />
+          <CustomButton name="SignUp" containerStyle="bg-[#5D50C6]" handleClick="" btnType="" textStyle="text-white" rightIcon="" />
 
         </div>
       </div>

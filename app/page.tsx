@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className='bg-primary-black overflow-hidden'>
 
-      {/* <Hero /> */}
+      <Hero />
       <div className='relative'>
         {/* <About /> */}
         {/* <div className='gradient-06 z-0' /> */}
