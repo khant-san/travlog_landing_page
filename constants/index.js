@@ -105,3 +105,48 @@ export const navLinks = [
     id: 'contact'
   },
 ]
+export const services = [
+  {
+    title: 'Best Tour Guide',
+    icon: '/services/booking.png',
+    description: 'What looked like a small patch of purple grass, above five feet.'
+  },
+  {
+    title: 'Easy Booking',
+    icon: '/services/destination.png',
+    description: 'Square, was moving across the sand in their direction.'
+  },
+  {
+    title: 'Weather Forecast',
+    icon: '/services/booking.png',
+    description: 'What looked like a small patch of purple grass, above five feet.'
+  },
+]
+
+export const explore = [
+  {
+    id: 'explore_1',
+    name: 'Paradise Beach, Bantayan Island',
+    location: 'Rome, Italy',
+    price: '$550.16',
+    rating: '4.8',
+    image: '/explore/explore1.png',
+
+  },
+  {
+    id: 'explore_2',
+    name: 'Ocean with full of Colors',
+    location: 'Maldives',
+    price: '$20.16',
+    rating: '4.5',
+    image: '/explore/explore2.png',
+  },
+  {
+    id: 'explore_3',
+    name: 'Mountain View, Above the cloud',
+    location: 'United Arab Emeries ',
+    price: '$150.58',
+    rating: '5.0',
+    image: '/explore/explore3.png',
+  },
+]

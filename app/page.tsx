@@ -1,6 +1,6 @@
 
 'use client'
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections'
+import { About, Categories, Explore, Feedback, GetStarted, Hero, Insights, Partnership, WhatsNew, World } from '../sections'
 
 
 export default function Home() {
@@ -9,9 +9,10 @@ export default function Home() {
 
       <Hero />
       <div className='relative'>
-        {/* <About /> */}
-        {/* <div className='gradient-06 z-0' /> */}
-        {/* <Explore /> */}
+        <Partnership />
+        <Categories />
+        {/* <div className='gradient-04 z-0' /> */}
+        <Explore />
       </div>
 
 

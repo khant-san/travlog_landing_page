@@ -18,7 +18,7 @@ const Hero = () => (
         variants={fadeIn("left", "tween", 0.2, 1)}
         className='flex-[0.5] flex justify-center flex-col'>
         <CustomButton name="Explore the world!" containerStyle="bg-white w-60" handleClick="" btnType="" textStyle="text-[#F85E9F]" rightIcon="/work.svg" />
-        <TitleText title={<>Travel <sapn className='text-[#F85E9F]' >top destination</sapn> of the world</>} />
+        <TitleText title={<>Travel <sapn className='text-[#F85E9F] ' >top destination</sapn> of the world</>} textStyle=" md:text-[64px] text-[20px]" />
         <p>We always make our customer happy by providing
           as many choices as possible </p>
         <div className='mt-[48px] flex flex-wrap justify-start gap-[20px]'>

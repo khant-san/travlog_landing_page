@@ -6,6 +6,8 @@ import Hero from "./Hero";
 import Insights from "./Insights";
 import WhatsNew from "./WhatsNew";
 import World from "./World";
+import Partnership from './Partnership'
+import Categories from './Categories'
 
 export {
     About,
@@ -16,4 +18,6 @@ export {
     Insights,
     WhatsNew,
     World,
+    Partnership,
+    Categories
 }
