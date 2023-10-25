@@ -11,7 +11,7 @@ import { Avatar, Card, CardBody, CardFooter, CardHeader, Image } from '@nextui-o
 const Categories = () => {
     return (
         <section
-            className={`${styles.paddings} `} id="category">
+            className={`${styles.paddings} `} id="categories">
             <motion.div
                 variants={staggerContainer}
                 initial="hidden"
