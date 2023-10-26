@@ -34,7 +34,7 @@ const Categories = () => {
 
 
                         {services.map((item, index) => (
-                            <Card className="p-4 w-[250px] min-h-[300px]" id={item.title}>
+                            <Card className="p-4 w-[250px] min-h-[300px]" key={item.title}>
                                 <CardHeader className="pb-0 pt-2 px-4 flex-col items-center mb-5">
                                     <Avatar src={item.icon} />
 

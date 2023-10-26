@@ -42,9 +42,9 @@ const Explore = () => {
 
 
             {explore.map((item, index) => (
-              <div className='max-w-[300px]'>
+              <div className='max-w-[300px]' key={item.id}>
                 <Card
-                  className="border-none" key={item.id}
+                  className="border-none" id={item.id}
                 >
                   <CardHeader className="p-0 m-0 ">
                     <div className='items-start'>
