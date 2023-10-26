@@ -14,7 +14,7 @@ const Explore = () => {
 
   return (
     <section
-      className={`${styles.paddings} flex flex-col gap-4`} id="explore" >
+      className={`${styles.paddings} flex flex-col gap-4`} id="discover" >
 
       <div className={`${styles.innerWidth} mx-auto flex flex-row`}>
         <div className='flex flex-col justify-center'>

@@ -17,7 +17,7 @@ const Categories = () => {
                 initial="hidden"
                 whileInView="show"
                 viewport={{ once: false, amount: 0.25 }}
-                className={`${styles.innerWidth} mx-auto flex flex-row`}>
+                className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-3`}>
                 <motion.div
                     variants={fadeIn("left", "tween", 0.2, 1)}
                     className='flex-[0.55] flex justify-center flex-col'>

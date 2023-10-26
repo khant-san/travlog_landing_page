@@ -12,8 +12,8 @@ const Footer = () => {
     <motion.footer variants={footerVariants}
       initial="hidden"
       whileInView="show"
-      className={`${styles.paddings} py-8 relative`}>
-      <div className="footer-gradient" />
+      className={`${styles.paddings} py-8 relative`} id="contact">
+
       <div className="flex max-md:flex-col flex-row  gap-20 sm:px-16 px-6 py-10">
         <div
           className="flex flex-col justify-start items-start gap-6">
@@ -42,7 +42,7 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -58,7 +58,7 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -74,7 +74,7 @@ const Footer = () => {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
+                className="h-4 w-4"
                 fill="currentColor"
                 viewBox="0 0 24 24">
                 <path
@@ -83,7 +83,7 @@ const Footer = () => {
             </button>
           </div>
         </div>
-        <div className="flex flex-row gap-36">
+        <div className="flex lg:flex-row lg:gap-36 gap-10 grid-cols-2">
           {footerLinks.map((link) => (
             <div key={link.title}
               className="flex flex-col gap-5">
@@ -100,23 +100,9 @@ const Footer = () => {
           ))}
 
         </div>
+        <div className="footer-gradient" />
       </div>
-      <div className="flex justify-between items-center flex-wrap mt-10 border-t border-gray-100 sm:px-16 px-6 py-10 bg-[#FFDA43] hidden" >
-        <p>@2023 :All Right Recerved.</p>
-        <div className="footer__copyrights-link">
 
-          <Link
-            href="/"
-            className="text-gray-500">
-            Privacy Policy
-          </Link>
-          <Link
-            href="/"
-            className="text-gray-500">
-            Terms of Use
-          </Link>
-        </div>
-      </div>
 
 
 

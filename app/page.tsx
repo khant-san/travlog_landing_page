@@ -24,11 +24,11 @@ export default function Home() {
         <WhatsNew />
       </div>
       {/* <World /> */}
-      <div className='relative'>
-        {/* <Insights /> */}
-        {/* <div className='gradient-04 z-0' /> */}
-        {/* <Feedback /> */}
-      </div>
+      {/* <div className='relative'> */}
+      {/* <Insights /> */}
+      {/* <div className='gradient-04 z-0' /> */}
+      {/* <Feedback /> */}
+      {/* </div> */}
 
 
     </div>
