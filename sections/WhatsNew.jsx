@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import styles from '../styles'
 
 import { fadeIn, planetVariants, staggerContainer } from '../utils/motion'
-import { NewFeatures, StarSteps, TitleText, TypingText } from '@/components'
-import { newFeatures } from '@/constants'
+import { BestServices, StarSteps, TitleText, TypingText } from '@/components'
+import { bestServices } from '@/constants'
 
 const WhatsNew = () => {
   return (
@@ -19,25 +19,55 @@ const WhatsNew = () => {
 
         <motion.div
           variants={fadeIn("left", "tween", 0.2, 1)}
-          className='flex-[0.75] flex justify-center flex-col'>
-          <TypingText title="| What's New?" textStyle="" />
-          <TitleText title={<>What's new about Metaverse?</>} textStyle="" />
-          <div className='mt-[48px] flex flex-wrap justify-between gap-[24px]'>
-            {newFeatures.map((feature, index) => (
-              <NewFeatures key={feature.title}
-                {...feature}
+          className='flex-1 flex justify-center flex-col'>
+          <TitleText title={<>Key Features</>} textStyle="text-[#F85E9F] uppercase md:text-[20px] text-[20px]" />
+          <TitleText title={<>We offer best services</>} textStyle="  md:text-[50px] text-[20px]" />
+          <p className='text-gray-600'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+            from 45 BC.</p>
+
+          <div className='mt-[48px] flex flex-col justify-between gap-[24px]'>
+
+            {bestServices.map((services, index) => (
+              <BestServices key={services.title}
+                {...services}
               />
             ))}
           </div>
         </motion.div>
         <motion.div
           variants={planetVariants('right')}
-          className={`flex-1 ${styles.flexCenter}`}
+          className={`flex-[0.75] ${styles.flexStart}`}
         >
-          <img
-            src='/whats-new.png'
-            alt='start'
-            className='w-[90%] h-[90%] object-contain' />
+
+          <div className="w-[300px] h-[500px] absolute -top-14 left-0  rounded-full  p-2">
+            <img
+              src="/services/activity_1.jpg"
+              alt="Image 1"
+              className="w-full h-full rounded-full object-cover"
+            />
+          </div>
+          <div className="w-[250px] h-[350px] absolute top-44 left-48 border-[18px] border-white rounded-full ">
+            <img
+              src="/services/activity_2.jpg"
+              alt="Image 2"
+              className="w-full h-full rounded-full object-cover"
+            />
+          </div>
+          <div className='absolute  w-[230px] p-1  top-11 left-48 bg-white rounded-full shadow-md'>
+            <div className='relative flex flex-row items-center justify-center mx-auto gap-2'>
+
+              <img src="/services/map.png"
+                alt="discount"
+                className='w-30 h-30 object-contain' />
+              <p className='font-bold'>Paradise on Earth</p>
+
+            </div>
+
+          </div>
+
+
+
+
 
 
         </motion.div>

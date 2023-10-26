@@ -6,4 +6,5 @@ import StarSteps from './StarSteps'
 import NewFeatures from './NewFeatures'
 import InsightCard from './InsightCard'
 import CustomButton from './CustomButton'
-export { Footer, Navbar, TypingText, TitleText, ExploreCard, StarSteps, NewFeatures, InsightCard, CustomButton, DescriptionText };
+import BestServices from './BestServices'
+export { Footer, Navbar, TypingText, TitleText, ExploreCard, StarSteps, NewFeatures, InsightCard, CustomButton, DescriptionText, BestServices };

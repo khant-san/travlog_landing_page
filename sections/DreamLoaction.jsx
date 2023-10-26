@@ -36,7 +36,7 @@ const DreamLoaction = () => {
                             <div className='relative flex flex-row items-center justify-center mx-auto gap-2'>
                                 <p className='font-bold'>Discounted Price</p>
                                 <img src="/dreamLocation/discount.png"
-                                    alt="girl"
+                                    alt="discount"
                                     className='w-30 h-30 object-contain' />
 
                             </div>
@@ -70,13 +70,13 @@ const DreamLoaction = () => {
 
                             </Card>
                         ))}
+                        {/* <div className='absolute bottom-40 right-24 w-[200px] h-[200px]'>
+                            <img src="/dreamLocation/icon.png"
+                                alt="icon"
+                                className='w-full h-full object-contain' />
+                        </div> */}
+                    </div>
 
-                    </div>
-                    <div className='absolute bottom-40 right-24 w-[200px] h-[200px]'>
-                        <img src="/dreamLocation/icon.png"
-                            alt="girl"
-                            className='w-full h-full object-contain' />
-                    </div>
                 </motion.div>
 
 

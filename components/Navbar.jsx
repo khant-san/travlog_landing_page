@@ -5,6 +5,7 @@ import { navVariants } from '../utils/motion'
 import { navLinks } from '@/constants'
 import { useState } from 'react'
 import { CustomButton } from '.'
+import Image from 'next/image'
 
 
 const Navbar = () => {
@@ -19,7 +20,16 @@ const Navbar = () => {
     >
       <div className='absolute w-[50%] inset-0 gradient-06' />
       <div className={`${styles.innerWidth} mx-auto flex justify-between gap-3`} >
-        <h2 className='font-extrabold text-[24px] leading-[30px] text-black'>Travlog</h2>
+        <div className='flex flex-row justify-center items-center gap-5'>
+          <Image
+            src="/icon.svg"
+            alt="logo"
+            width={50}
+            height={50}
+            className="object-contail" />
+          <h2 className='font-extrabold text-[24px] leading-[30px] text-black'>Travlog</h2>
+
+        </div>
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
