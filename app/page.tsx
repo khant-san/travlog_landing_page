@@ -1,5 +1,6 @@
 
 'use client'
+import DreamLoaction from '@/sections/DreamLoaction'
 import { About, Categories, Explore, Feedback, GetStarted, Hero, Insights, Partnership, WhatsNew, World } from '../sections'
 
 
@@ -17,6 +18,7 @@ export default function Home() {
 
 
       <div className='relative'>
+        <DreamLoaction />
         {/* <GetStarted /> */}
         {/* <div className='gradient-04 z-0' /> */}
         {/* <WhatsNew /> */}

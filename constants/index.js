@@ -150,3 +150,25 @@ export const explore = [
     image: '/explore/explore3.png',
   },
 ]
+
+export const visitData = [
+  {
+    count: '500+',
+    title: 'Holiday Package',
+
+  },
+  {
+    count: '100',
+    title: 'Luxury Hotel',
+
+  },
+  {
+    count: '7',
+    title: 'Premium Airlines',
+
+  },
+  {
+    count: '2k+',
+    title: 'Happy Customer'
+  }
+]

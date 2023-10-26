@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import styles from '../styles'
 import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 import { CustomButton, TitleText } from '@/components';
-import Image from 'next/image';
+
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>

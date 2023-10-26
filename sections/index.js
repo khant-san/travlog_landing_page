@@ -8,6 +8,7 @@ import WhatsNew from "./WhatsNew";
 import World from "./World";
 import Partnership from './Partnership'
 import Categories from './Categories'
+import DreamLocation from './DreamLoaction'
 
 export {
     About,
@@ -19,5 +20,6 @@ export {
     WhatsNew,
     World,
     Partnership,
-    Categories
+    Categories,
+    DreamLocation
 }
