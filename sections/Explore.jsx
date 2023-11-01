@@ -53,7 +53,7 @@ const Explore = () => {
                 // when window width is >= 320px
                 320: {
                   slidesPerView: 1,
-                  spaceBetween: 20
+                  spaceBetween: 1
                 },
                 // when window width is >= 480px
                 480: {
