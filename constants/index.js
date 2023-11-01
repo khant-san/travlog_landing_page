@@ -149,6 +149,15 @@ export const explore = [
     rating: '5.0',
     image: '/explore/explore3.png',
   },
+  {
+    id: 'explore_4',
+    name: 'Mountain View, Above the cloud',
+    location: 'United Arab Emeries ',
+    price: '$150.58',
+    rating: '5.0',
+    image: '/planet-06.png',
+
+  },
 ]
 
 export const visitData = [
