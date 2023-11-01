@@ -45,8 +45,6 @@ const Explore = () => {
         >
           <div className='overflow-visible flex flex-row gap-2'>
             <Swiper
-
-
               slidesPerView={3}
               spaceBetween={20}
               breakpoints={{
@@ -58,7 +56,7 @@ const Explore = () => {
                 // when window width is >= 480px
                 480: {
                   slidesPerView: 1,
-                  spaceBetween: 30
+                  spaceBetween: 20
                 },
                 // when window width is >= 640px
                 640: {
@@ -71,17 +69,17 @@ const Explore = () => {
                 clickable: true
               }}
               modules={[FreeMode, Pagination]}
-              className='lg:max-w-[950px] max-w-[480px] xs:max-w-[310px]'
+              className='lg:max-w-[950px] max-w-[480px] sm:max-w-[321px]'
 
             >
 
               {explore.map((item, index) => (
-                <SwiperSlide key={item.id} className='lg:w-[300px] w-[150px] pb-3'>
-                  <div className='flex flex-row gap-4 group relative shadow-lg w-100' key={item.id}>
+                <SwiperSlide key={item.id} className='lg:w-[300px] w-[250px] pb-3'>
+                  <div className='flex flex-row gap-4 group relative drop-shadow-lg w-100' key={item.id}>
                     <Card
                       className="border-none w-[300px]" id={item.id}
                     >
-                      <CardHeader className="p-0 m-0  lg:h-[300px] h-[250px]">
+                      <CardHeader className="p-0 m-0  pb-3 lg:h-[300px] sm:h-[200px] h-[250px]">
                         <div className='items-start  w-auto' >
                           <Image
                             alt="Woman listing to music"
