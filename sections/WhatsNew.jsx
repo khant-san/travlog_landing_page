@@ -25,7 +25,7 @@ const WhatsNew = () => {
           <p className='text-gray-600'>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
             from 45 BC.</p>
 
-          <div className='mt-[48px] flex flex-col justify-between gap-[24px]'>
+          <div className='mt-[48px] flex flex-col justify-center gap-[24px]'>
 
             {bestServices.map((services, index) => (
               <BestServices key={services.title}

@@ -30,16 +30,16 @@ const Categories = () => {
                     variants={fadeIn("left", "tween", 0.2, 1)}
                     className={`flex-1 ${styles.flexCenter}`}
                 >
-                    <div className='overflow-visible flex flex-row gap-6'>
+                    <div className='overflow-visible flex lg:flex-row flex-col gap-6'>
 
 
                         {services.map((item, index) => (
-                            <Card className="p-4 w-[250px] min-h-[300px]" key={item.title}>
-                                <CardHeader className="pb-0 pt-2 px-4 flex-col items-center mb-5">
+                            <Card className="p-4 lg:w-[250px] lg:min-h-[300px] w-[500px] min-h-[100px]" key={item.title}>
+                                <CardHeader className="pb-0 pt-2 px-4 lg:flex-col flex-row gap-3 items-center justify-center mb-5">
                                     <Avatar src={item.icon} />
-
+                                    {/* <TitleText title={item.title} textStyle="text-[20px] flex justify-center mb-5 lg:hidden" /> */}
                                 </CardHeader>
-                                <CardBody className="overflow-visible py-2">
+                                <CardBody className="overflow-visible py-1">
                                     <TitleText title={item.title} textStyle="text-[20px] flex justify-center mb-5" />
                                     <DescriptionText title={item.description} textStyle="text-[15px] decoration-0 flex text-center text-secondary-white" />
 
